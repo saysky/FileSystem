@@ -1,0 +1,13 @@
+package com.example.client.constant;
+
+/**
+ * 系统常量
+ */
+
+public class SystemConst {
+
+    /**
+     * 私钥
+     */
+    public static final String PRIVATE_KEY = "MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAJ3HwsCHIKz3CErQS7+NFqLAW5SGHw+J444ozfuZ/Sm6pLUzIDksJ7//mtmBDKydfx+3dXbqCjd/QGYbV+XCk4FmfGJHy4WpaUwOc5wh2UoCBE9SEdXOpmvFSV50HcWxUncsc6ufr/Bpy5Ktks3RsZ0c73lEE6FOFezcTlbtoDMhAgMBAAECgYAgK0Rn4KUm3s8QAdwP2AJPeIyzgYz/rAt7RpKIw+K8CVPfpebiAUCxgrndstQUtZ/fpZYLgrhGjGli6BxJuhw8qVpYu01APMbLGj3JhrAWT0zPMQw+JmmIyHKl8q43Dy8/dvhZ+jZdf6WRJxldyMLLJszUqVPsU/eAxEiKALfRgQJBAOGW3YHOE95a5dO1yKA/1Nc+wb2gVX9tKzCh5ZrLDu6a3GmW7Lk9gtuMtOi0r1AlwgvgJH6aaAKFTnE76x14FhkCQQCzDMrmwH1w86fsoha0zJez9zQIyVcunxPdRudySK3/VG0VGG0obGEaKT1lo3AewJ7qb6I1T7uAI9Iwf2QWUdZJAkBdingpBfGZJunbwqoBQNaZti0R2zT4lKTvEoKpj/+OEurIYcug+A+VyB+PyrRTMITo9bVMRexQ90PSkjzoyE2pAkAOK84HU2baQL6isPWBG8xJ9x/MLjtTOk31Ln51AiGbWtBDYiqJj4Jj8q2kVLo0BOTPA0TgWU4qxysEoaCHT7TZAkEAqmnxx2euNUc++xsPOHTJHtKts+K8IgTxldAJCTDVO3eltU69bKHd/tUBen/oyUJ9OWGp+WTFxyh8vQ4rF5kZkw==";
+}

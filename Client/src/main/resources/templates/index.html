@@ -1,0 +1,43 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>文件列表</title>
+    </head>
+    <body>
+
+        <div style="margin: 50px auto; width: 1000px; text-align: center;">
+            <form action="/file/upload" enctype="multipart/form-data" method="post">
+                <input type="file" name="file">
+                <input type="submit" value="上传">
+            </form>
+        </div>
+
+        <table width="1000" style="margin: 50px auto;" border="1px solid #222">
+            <tr>
+                <td>文件ID</td>
+                <td>文件名</td>
+                <td>文件大小</td>
+                <td>文件类型</td>
+                <td>创建时间</td>
+                <td>操作</td>
+            </tr>
+            <tr th:each="file : ${fileDTOList}">
+                <td th:text="${file.id}"></td>
+                <td th:text="${file.name}"></td>
+                <td th:text="${file.size}"></td>
+                <td th:text="${file.type}"></td>
+                <td th:text="${#dates.format(file.time,'yyyy-MM-dd HH:mm:ss')}"></td>
+                <td>
+                    <a target="_blank" th:href="'/file/download?id='+${file.id}">下载</a>
+                </td>
+            </tr>
+        </table>
+
+
+
+    </body>
+</html>
